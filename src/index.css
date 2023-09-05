@@ -13,6 +13,11 @@ ul li {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .title {
   font-family: "Markazi Text", serif;
   font-size: 64pt;
@@ -75,6 +80,10 @@ ul li {
   background-color: #edefee;
 }
 
+.bg-dark-gray {
+  background-color: #333333;
+}
+
 .text-orange {
   color: #ee9972;
 }
@@ -95,4 +104,47 @@ ul li {
 #primary-button:hover {
   transform: scale(1.2);
   transition: all 0.5s;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburgerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #495e57;
+}
+
+@media screen and (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #495e57;
+    transition: 0.3s;
+  }
+
+  li a {
+    color: #fff;
+
+    font-size: 25pt !important;
+  }
+
+  .nav.active {
+    left: 0;
+  }
 }

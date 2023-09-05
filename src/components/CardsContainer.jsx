@@ -4,7 +4,7 @@ import Card from "./Card"
 function CardsContainer() {
 
   return (
-    <div id="cards-container" className="content-wrapper">
+    <div id="menu" className="content-wrapper">
         {meals.map((meal, id) => {
             return <Card 
             image={meal.image}

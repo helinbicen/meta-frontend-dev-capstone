@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function Hero() {
   return (
-    <section id="hero" className="bg-green">
+    <section id="about" className="bg-green">
       <div className="content-wrapper">
         <div className="hero-content">
           <h1 className="title">Little Lemon</h1>
@@ -14,7 +14,7 @@ function Hero() {
             featuring delectable bruschettas, succulent burgers, and refreshing
             Greek salads, is a testament to our belief that food is an art.
           </p>
-          <Button text="Reserve a table" />
+          <Button text="Reserve a table" linkTo="#reservations" />
         </div>
         <div className="hero-image">
           <img src={HeroImage} alt="Hero Image" />
